@@ -30,7 +30,8 @@ class Cat:
         """
         :return: a string, a depiction of the cat object state
         """
-        return "name: {0} age: {1} food_prefs: {2}, num_lives: {3}".format(self._name, self._age, self._food_prefs, self._num_lives)
+        return "name: {0} age: {1} food_prefs: {2}, num_lives: {3}".format(
+            self._name, self._age, self._food_prefs, self._num_lives)
 
     def __str__(self):
         """
@@ -43,7 +44,7 @@ class Cat:
         """
         Celebrate the cat's birthday! Increments age by 1.
         """
-        self._age = self.age + 1
+        self._age = self._age + 1
 
     @classmethod
     def set_default_lives(cls, num_lives):
@@ -72,7 +73,7 @@ def main():
     print("All cats start with {} lives".format(tobias.lives))
     print("All cats start with {} lives".format(Cat.lives))
 
-    print("Celebrity cats:", end = "\n")
+    print("Celebrity cats:", end="\n")
     for name in Cat.get_list_of_celebrity_cats():
         print(name, end="\n")
 
