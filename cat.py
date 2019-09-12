@@ -18,6 +18,7 @@ class Cat:
         self._name = name
         self._food_prefs = favorite_food
         self._num_lives = Cat.lives
+        self.__color = "red"
 
     def scratch_and_pet(self):
         """
@@ -65,7 +66,6 @@ def main():
     """
     Creates a cat and demonstrates its methods and features
     """
-    tobias = Cat("Tobias", 3, ["Sushi", "Raw fish"])
     print(tobias.scratch_and_pet())
     print(tobias)
     print(repr(tobias))
